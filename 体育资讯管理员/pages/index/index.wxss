@@ -1,0 +1,103 @@
+/* pages/index/index.wxss */
+.slide-image{
+    width: 100%;
+}
+.weui-media-box_appmsg{
+    position: relative;
+    top: 0rpx;
+    left: 0rpx;
+}
+.weui-media-box__title{
+    /* border:1rpx solid red; */
+    /* text-align:right; */
+}
+.weui-media-box__desc{
+    margin-top: 30rpx;
+    /* margin-top:20rpx; */
+    /* border:1rpx solid red; */
+    text-align:right;
+   
+}
+.dianzanimg{
+    position: absolute;
+    top: 100rpx;
+    left: 170rpx;
+    /* border: 1rpx solid red; */
+    width: 50rpx;
+    height:50rpx;
+}
+.delete{
+    position: absolute;
+    top:33rpx;
+    left:652rpx;
+    display:inline;
+}
+
+.dainzan{
+    padding-right:140rpx;
+    display:inline;
+}
+.pinglun{
+    padding-right:50rpx;
+    display:inline-block;
+}
+.pinglunimg{
+    position: absolute;
+    top: 110rpx;
+    left: 320rpx;
+    /* border: 1rpx solid red; */
+    width: 50rpx;
+    height:50rpx;
+}
+.time{
+    padding-left:100rpx;
+    display:inline;
+}
+.search {
+  width: 100%;
+  height: 100rpx;
+  background-color: #efeff4;
+  color: #fff;
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content:center;
+  position: relative;
+}
+
+.search .left{
+  width: 65%;
+  padding: 0 20rpx;
+  margin-left:20rpx;
+  border:1px solid black;
+  /* background-color: black; */
+  border-radius: 50rpx;
+}
+
+.search .input{
+  height: 40rpx;
+  line-height: 80rpx;
+  vertical-align:middle;
+  color:black;
+}
+
+.search .searchIcon{
+    position: absolute;
+    top:50%;
+    left: 40rpx;
+    margin-top: -20rpx;
+    color:black;
+}
+
+.search .right{
+  width: 20%;
+}
+
+.search button{
+  color: black;
+  /* background-color: #F65E2E; */
+}
+
+.search button::after{
+  border:0;
+}

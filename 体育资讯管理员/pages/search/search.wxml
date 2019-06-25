@@ -1,0 +1,47 @@
+
+
+<view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">查询结果</view>
+    <view class="weui-panel__bd">
+        <block wx:for="{{topic}}" wx:key="ture">
+            <view  class="weui-media-box weui-media-box_appmsg" >
+                <view class='dianzanimg'>
+                    <image src='/resources/images/dianzan.png' style='width:50rpx;height:50rpx;'></image>
+                </view>
+                <view class='pinglunimg'>
+                    <image src='/resources/images/pinglun.png' style='width:50rpx;height:50rpx;'></image>
+                </view>
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                     <image class="weui-media-box__thumb" src="http://localhost/server/public/uploads/images/{{images[index]}}"/>
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">{{item.title}}</view>
+                    <view class="delete" bindtap="delete" data-id="{{item.id}}">删除</view>
+                    <view class="weui-media-box__desc">
+                             <view class="dainzan" bindtap="zan" data-id="{{item.id}}">{{item.zan}}</view>
+                            <!-- <navigator url="/pages/content/content?id={{item.id}}"> -->
+                            <view class="pinglun"><navigator url="/pages/talk/talk?id={{item.id}}">评论</navigator></view>
+                            <!-- </navigator> -->
+                            <view class="time">{{item.time}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 22222 -->
+
+
+
+        <!-- <view class='dianzanimg'>
+            <image src='/resources/images/dianzan.png' style='width:50rpx;height:50rpx;'></image>
+        </view>
+         <view class='pinglunimg'>
+            <image src='/resources/images/pinglun.png' style='width:50rpx;height:50rpx;'></image>
+        </view> -->
+    </view>
+    <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+            <view class="weui-cell__bd">查看更多</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+    </view>
+</view>

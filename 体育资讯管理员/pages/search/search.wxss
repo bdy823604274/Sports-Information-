@@ -1,0 +1,42 @@
+
+.weui-media-box__desc{
+    margin-top: 30rpx;
+    /* margin-top:20rpx; */
+    /* border:1rpx solid red; */
+    text-align:right;
+   
+}
+.dianzanimg{
+    position: absolute;
+    top: 100rpx;
+    left: 170rpx;
+    /* border: 1rpx solid red; */
+    width: 50rpx;
+    height:50rpx;
+}
+.delete{
+    position: absolute;
+    top:33rpx;
+    left:652rpx;
+    display:inline;
+}
+.dainzan{
+    padding-right:140rpx;
+    display:inline;
+}
+.pinglun{
+    padding-right:50rpx;
+    display:inline-block;
+}
+.pinglunimg{
+    position: absolute;
+    top: 110rpx;
+    left: 320rpx;
+    /* border: 1rpx solid red; */
+    width: 50rpx;
+    height:50rpx;
+}
+.time{
+    padding-left:100rpx;
+    display:inline;
+}

@@ -1,0 +1,34 @@
+<!--pages/content/content.wxml-->
+<view class="weui-cells__title">话题</view>
+<view class="weui-cells weui-cells_after-title">
+    <view >
+    <view class='ptitle'>主题</view>
+        <view class="title">{{title}}</view>
+    </view>
+    <view class="top" bindtap="top" data-id="{{id}}">置顶</view>
+    <view>
+    <view class='pcontent'>内容</view>
+    <view class='JobDetails'>{{content}}</view>
+    </view>
+     <view class='img'>
+    <!--  <block wx:for="{{imgurls}}" wx:key="*this"> -->
+        <view class="weui-uploader__file " bindtap="previewImage">
+            <image class="weui-uploader__img" src="http://localhost/server/public/uploads/images/{{img}}/{{imgs}}" mode="aspectFill" />
+        </view>
+    </view>
+    <view class='pinglun' >
+            <view class="inputPing" ><input type='text' placeholder='评论' bindinput="inputPing" data-id="{{id}}"></input></view>
+            <button class="weui-btn mini-btn" type="default" size="mini" class="publish"  bindtap="pingTap" >发布</button>
+          </view>
+</view>
+
+<view>
+    <block wx:for="{{comment}}" wx:key="ture">
+    <view class='Content'>
+        <view class='name'>{{item.username}}</view>
+        <view class='content'>{{item.content}}</view>
+        <view class='time'>{{item.time}}</view>
+        <view class="delete" bindtap="delete" data-id="{{item.id}}">删除</view>
+    </view>
+    </block>
+</view>

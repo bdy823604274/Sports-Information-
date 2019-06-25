@@ -1,0 +1,54 @@
+{
+  "pages": [
+      "pages/index/index",
+    "pages/search/search",
+   
+    "pages/catalogue/catalogue",
+    "pages/log/log",
+   
+    "pages/user/user",
+    "pages/post/post",
+    "pages/my/my",
+   
+    "pages/main/main",
+    "pages/talk/talk"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "热门",
+        "pagePath": "pages/index/index",
+        "iconPath": "/resources/images/program.png",
+        "selectedIconPath": "/resources/images/program_selected.png"
+      },
+      {
+        "text": "赛事",
+        "pagePath": "pages/catalogue/catalogue",
+        "iconPath": "/resources/images/news.png",
+        "selectedIconPath": "/resources/images/news_selected.png"
+      },
+      {
+        "text": "用户",
+        "pagePath": "pages/user/user",
+        "iconPath": "/resources/images/user.png",
+        "selectedIconPath": "/resources/images/user_selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "/resources/images/about.png",
+        "selectedIconPath": "/resources/images/about_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

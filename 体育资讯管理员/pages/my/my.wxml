@@ -1,0 +1,50 @@
+<view>
+    <view>
+        <view >
+            <view class="userinfo">
+                <open-data type="userAvatarUrl" class="userinfo-avatar" style="width: 100px; height: 100px; display: block"></open-data>
+            </view>
+            <view class='userNickName'>
+                <open-data type="userNickName" ></open-data>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title information">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="/resources/images/name111.png" style="margin-right: 5px;vertical-align: middle;width:30px; height: 30px;"></image>
+                </view>
+                <view class="weui-cell__bd">账号</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{information[0].userName}}</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="/resources/images/pass111.png" style="margin-right: 5px;vertical-align: middle;width:30px; height: 30px;"></image>
+                </view>
+                <view class="weui-cell__bd">密码</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{information[0].password}}</view>
+            </navigator>
+        </view>
+        <view class="weui-cells weui-cells_after-title information">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                     <image src="/resources/images/type111.png" style="margin-right: 5px;vertical-align: middle;width:30px; height: 30px;"></image>
+                </view>
+                <view class="weui-cell__bd">属性</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{information[0].type}}</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="/resources/images/name222.png" style="margin-right: 5px;vertical-align: middle;width:30px; height: 30px;"></image>
+                </view>
+                <view class="weui-cell__bd">姓名</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{information[0].name}}</view>
+            </navigator>
+        </view>
+    </view>
+    <view class="btn-wrap">
+        <button formType="submit" bindtap='submit' class="btn-default login-btn">退出</button>
+    </view>
+    <view class="weui-footer">
+        <view class="weui-footer__text">NUC © 咨询</view>
+    </view>
+</view>

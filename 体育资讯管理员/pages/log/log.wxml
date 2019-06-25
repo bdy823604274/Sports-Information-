@@ -1,0 +1,33 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/resources/images/more/loading.gif"></image>
+  </view>
+
+    <image class="title" src="/resources/images/more/title8.png"></image>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="wave" src="/resources/images/more/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="/resources/images/more/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class= "main">
+        <form bindsubmit="formSubmit">
+                <view class="login-item">
+                <!-- <image src="/images/ph.png" class="icon-default"></image> -->
+                <view class='name'>账号：</view>    
+                <input placeholder="请输入账号" placeholder-class="input-default" name="phone" />
+                </view>
+                <view class="login-item">
+                <!-- <image src="/resources/images/lock.png" class="icon-default"></image> -->
+                <view class='name'>密码：</view>    
+                <input placeholder="请输入密码" type="password" placeholder-class="input-default" name="password" />
+                </view>
+                <view class="tip-wrap">
+                </view>
+                <view class="btn-wrap">
+                <button formType="submit" class="btn-default login-btn">登录</button>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

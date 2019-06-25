@@ -1,0 +1,80 @@
+/* pages/content/content.wxss */
+.JobDetails{
+  color: #000;
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+.ptitle{
+    padding-top: 10rpx;
+    padding-left:30rpx;
+}
+.title{
+    padding:30rpx;
+}
+.top{
+    position: absolute;
+    top:10rpx;
+    left:623rpx;
+}
+.pcontent{
+    padding:30rpx;
+}
+.Content{
+  clear: both;
+  background: #fff;
+  margin-bottom: 20rpx;
+  position: relative;
+  top:106rpx;
+}
+.name{
+  padding: 10rpx 30rpx;
+  font-size: 32rpx;
+}
+.content{
+  color: #666;
+  padding: 28rpx;
+  font-size: 28rpx;
+}
+.inputPing{
+  width:550rpx;
+  margin: 20rpx 10rpx;
+  border: 1rpx solid #eee;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 5rpx 10rpx;
+  background: #E8E9E9;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+.img{
+    width: 100rpx;
+    height: 100rpx;
+}
+.pinglun{
+  position: relative;
+  top:96rpx;
+  /* heigh */
+  background: #fff;
+  
+  padding-bottom: 10rpx;
+}
+.publish{
+  position: absolute;
+  margin-top:1px;
+  margin-right: 0rpx;
+  top: 0rpx;
+  right: 30rpx;
+   /* border: 1rpx solid red; */
+}
+.time{
+    position: absolute;
+    top:10rpx;
+    left:400rpx;
+
+}
+.delete{
+    position: absolute;
+    top:99rpx;
+    left:630rpx;
+
+}

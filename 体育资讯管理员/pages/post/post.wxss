@@ -1,0 +1,12 @@
+/* pages/post/post.wxss */
+.target{
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-left: 30rpx;
+}
+
+
+
+
+
+
